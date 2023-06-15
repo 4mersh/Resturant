@@ -1,0 +1,18 @@
+<div class="hero">
+
+</div>
+
+
+<h1 class="text-center mt-5">More Info</h1>
+
+<hr class="mx-5 mb-5">
+
+<div class="container">
+    <div *ngIf="Drinks">
+        <img src="{{Drinks.img}}" class="img-thumbnail center" alt="..." style="height: 100%; width: 100%;">
+        <h2 class="text-center">{{Drinks.title}}</h2>
+        <h3 class="text-center">{{Drinks.price}} €</h3>
+        <hr class="mx-5">
+        <input type="submit" class="btn btn-danger my-5" value="Add to Cart" (click)="addToCart2()">
+    </div>
+</div>

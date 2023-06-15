@@ -1,0 +1,48 @@
+<div class="hero">
+
+</div>
+
+<h1 class="my-5 text-center">Cart</h1>
+<hr class="mx-5">
+
+<div class="container mb-5">
+    <div *ngFor="let val of cart">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><img src="{{val.Image}}" alt="" style="height: 100px; width: 100px;"></td>
+                <td>{{val.name}}</td>
+                <td>{{val.price}} €</td>
+            </tr>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div *ngFor="let val2 of Cart">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><img src="{{val2.img}}" alt="" style="height: 100px; width: 100px;"></td>
+                <td>{{val2.title}}</td>
+                <td>{{val2.price}} €</td>
+            </tr>
+
+
+    </div>
+</div>

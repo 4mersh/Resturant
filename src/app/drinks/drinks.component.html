@@ -1,0 +1,16 @@
+<div class="hero">
+
+</div>
+
+<h1 class="text-center mt-3 mb-5">Drinks</h1>
+
+<hr class="mx-5">
+
+<div class="container">
+    <div class="row row-cols-xl-4  row-cols-lg-5  row-cols-md-3  row-cols-sm-2  row-cols-xs-2">
+        <div *ngFor="let val of drinks; index as D" class="mx-5 my-5">
+            <a routerLink="/drinks/{{D}}"><img src="{{val.img}}" class="img-thumbnail" alt="..." style="height: 100%; width: 100%;"></a>
+            <h2 class="text-center">{{val.title}}</h2>
+        </div>
+    </div><br><br>
+</div>
